@@ -1,4 +1,12 @@
 document.addEventListener ('DOMContentLoaded', function(){
+    const botaoDeAccessibilidade = document.getElementById('botao-acessibilidade');
+    const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
+
+    botaoDeAccessibilidade.addEventListener('click', function(){
+        botaoDeAccessibilidade.classList.toggle('rotacao-botao');
+        opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
+    })
+
     let tamanhoAtualFonte = 1;
 
     const aumentaFonteBotao = document.getElementById ('aumentar-fonte');
